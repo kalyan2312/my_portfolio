@@ -159,7 +159,7 @@ section h2 {
     padding: 2rem;
     border-radius: 5px;
     display: inline-block;
-}   
+}
 
 .experience-section {
     background-size: cover;
@@ -254,6 +254,7 @@ section h2 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
+
 .projects-section {
     background-size: cover;
     background-position: center;
@@ -333,4 +334,109 @@ section h2 {
 
 .contact-details a:hover {
     text-decoration: underline;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .home-content p {
+        font-size: 1.2rem;
+    }
+
+    .about-section .box, .experience-section .box, .skills-section .box, .projects-section .box {
+        padding: 1rem;
+    }
+
+    .skills-list li, .job ul li, .project ul li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-content p {
+        font-size: 1rem;
+    }
+
+    header .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header nav ul.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav ul li {
+        width: 100%;
+        text-align: left;
+    }
+
+    header nav ul li a {
+        padding: 1rem;
+        display: block;
+    }
+}
+
+/* Add responsive navigation toggle button */
+header .menu-toggle {
+    display: none;
+    background: #444;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header .menu-toggle:hover {
+    background: #555;
+}
+
+@media (max-width: 768px) {
+    header .menu-toggle {
+        display: block;
+    }
 }
