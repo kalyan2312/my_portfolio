@@ -284,11 +284,23 @@ section h2 {
     color: #fff; /* Ensure heading is visible */
 }
 
-.projects-section .box {
+.projects-section .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project .box {
     background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
     padding: 2rem;
     border-radius: 5px;
-    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .project ul {
@@ -300,6 +312,13 @@ section h2 {
 .project ul li {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .projects-section .projects-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .contact-section {
