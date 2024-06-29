@@ -290,12 +290,22 @@ section h2 {
     gap: 2rem;
 }
 
+.project h3 {
+    margin: 1rem 0;
+    color: #fff; /* Ensure project headings are visible */
+}
+
 .project .box {
     background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    height: 300px; /* Set a fixed height for the boxes */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden; /* Ensure content doesn't overflow */
 }
 
 .project .box:hover {
@@ -303,14 +313,24 @@ section h2 {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+.project .box-content {
+    flex-grow: 1; /* Allow the content to grow and take up available space */
+    overflow-y: auto; /* Allow scrolling if the content overflows */
+}
+
+.project .box p {
+    margin-bottom: 1rem;
+}
+
 .project ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     color: #333; /* Dark text color for better visibility */
 }
 
 .project ul li {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 0.5rem;
 }
 
@@ -320,7 +340,6 @@ section h2 {
         grid-template-columns: 1fr;
     }
 }
-
 .contact-section {
     background: #f7f7f7;
     padding: 4rem 0;
