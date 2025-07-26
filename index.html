@@ -1,240 +1,468 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kalyan Gangadhar - DevOps Engineer</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalyan Gangadhar - DevOps Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="logo">
-        <h1 class="animate__animated animate__fadeInDown">Kalyan Gangadhar</h1>
-      </div>
-      <nav>
-        <div class="menu-toggle" id="menu-toggle">
-          <i class="fas fa-bars"></i>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">KG</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <ul id="nav-list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    </nav>
 
-  <section id="home" class="home-section" style="background-image: url('kalyan2.jpeg');">
-    <div class="home-content animate__animated animate__fadeInUp">
-      <h1>Welcome to My Portfolio</h1>
-      <p>Hi, I'm Kalyan Gangadhar, a DevOps Engineer based in Bangalore, India.</p>
-      <a href="#about" class="btn">Learn More</a>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particles"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Hi, I'm <span class="highlight">Kalyan Gangadhar</span>
+            </h1>
+            <h2 class="hero-subtitle">
+                <span class="typing-text"></span>
+            </h2>
+            <p class="hero-description">
+                Passionate DevOps Engineer dedicated to creating efficient, scalable, and reliable cloud infrastructures. 
+                Specialized in AWS, Azure, GCP, and modern containerization technologies.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#about" class="btn btn-outline">Learn More</a>
+            </div>
+            <div class="hero-social">
+                <a href="https://www.linkedin.com/in/kalyan-gangadhar/" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                
+                <a href="mailto:kalyanappari002@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-  <section id="about" class="about-section" style="background-image: url('about.png');">
-    <div class="container">
-      <h2 class="animate__animated animate__fadeInUp">About Me</h2>
-      <div class="box animate__animated animate__fadeInUp">
-        <p>I am a DevOps Engineer with over 6 years of hands-on experience in architecting, deploying, and optimizing cloud solutions. Skilled in DevOps practices, specializing in build and release engineering, ensuring smooth software delivery pipelines and continuous integration/continuous deployment (CI/CD). Extensive knowledge in software configuration management (SCM), adept at implementing best practices to manage code repositories and version control systems effectively. Strong background in cloud infrastructure management, including provisioning, scaling, and monitoring resources to meet performance and availability requirements. Experienced in automation techniques, streamlining workflows and reducing manual efforts across IT operations and cloud environments.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="experience" class="experience-section" style="background-image: url('experience.png');">
-    <div class="container">
-      <h2 class="animate__animated animate__fadeInUp">Experience</h2>
-      <div class="box animate__animated animate__fadeInUp">
-        <div class="job">
-          <h3>DevOps/Cloud Engineer - SLK Software, Bangalore</h3>
-          <span>2024 - Present</span>
-          <ul>
-            <li>Working with Azure cloud services including Azure DevOps, AKS, Azure Repos, and ARM templates.</li>
-            <li>Built and maintained scalable CI/CD pipelines using Azure DevOps and GitHub Actions.</li>
-            <li>Managed and automated infrastructure using Terraform and Azure CLI.</li>
-            <li>Integrated Azure Monitor and Log Analytics for proactive monitoring and alerting.</li>
-            <li>Collaborated with development teams to containerize applications using Docker and deploy them to AKS clusters.</li>
-          </ul>
-        </div>
-        <div class="job">
-          <h3>DevOps/Cloud Engineer - Vijna Labs Pvt Ltd, Bangalore</h3>
-          <span>2022 - 2024</span>
-          <ul>
-            <li>Managed GCP services like GKE, VM instances, and GCR.</li>
-            <li>CI/CD with Jenkins and Concourse; Docker and Kubernetes for deployments.</li>
-            <li>Monitoring with Prometheus, Grafana, and Loki; implemented Service Mesh and Ingress.</li>
-          </ul>
-        </div>
-        <div class="job">
-          <h3>DevOps Engineer - AGS Health Pvt Ltd, Hyderabad</h3>
-          <span>2021 - 2022</span>
-          <ul>
-            <li>Managed AWS infrastructure including EC2, VPC, EKS, IAM, and S3.</li>
-            <li>Created CI/CD pipelines and implemented monitoring using CloudWatch.</li>
-          </ul>
-        </div>
-        <div class="job">
-          <h3>Client Care Engineer - L-Cube Innovative Solutions, Chennai</h3>
-          <span>2019 - 2021</span>
-          <ul>
-            <li>Provided technical support to healthcare clients and trained users on software products.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills" class="skills-section" style="background-image: url('image.png');">
-    <div class="container">
-      <h2 class="animate__animated animate__fadeInUp">Skills</h2>
-      <div class="box animate__animated animate__fadeInUp">
-        <ul class="skills-list">
-          <li>CI/CD</li>
-          <li>Cloud: AWS, Azure, GCP</li>
-          <li>Containers: Docker, Kubernetes</li>
-          <li>IaC: Terraform, ARM, CloudFormation</li>
-          <li>Monitoring: Prometheus, Grafana, Azure Monitor</li>
-          <li>Scripting: Bash, Python, PowerShell</li>
-          <li>Git, GitHub, GitLab</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-   <section id="projects" class="projects-section" style="background-image: url('project.png');">
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
-            <h2 class="animate__animated animate__fadeInUp">Projects</h2>
-            <div class="projects-grid">
-                <div class="project animate__animated animate__fadeInUp">
-                    <h3>CI/CD Pipeline Implementation</h3>
-                    <div class="box">
-                        <div class="box-content">
-                            <p><strong>Description:</strong> Designed and implemented a CI/CD pipeline using Jenkins and Docker, which automated the build, test, and deployment processes for multiple microservices.</p>
-                            <p><strong>Technologies:</strong> Jenkins, Docker, Git, Kubernetes</p>
-                            <p><strong>Highlights:</strong></p>
-                            <ul>
-                                <li>Reduced deployment time by 50%.</li>
-                                <li>Enabled seamless integration and continuous delivery.</li>
-                            </ul>
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>DevOps Engineer & Cloud Architect</h3>
+                    <p>
+                        Highly motivated DevOps Engineer with extensive experience in building and managing 
+                        cloud infrastructures across AWS, Azure, and GCP. I specialize in automating processes, 
+                        optimizing CI/CD pipelines, and ensuring seamless software deployments.
+                    </p>
+                    <p>
+                        Based in Bangalore, I'm passionate about implementing best practices to enhance system 
+                        performance and reliability. My expertise spans across containerization, infrastructure 
+                        as code, monitoring, and security implementation.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="5">0</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="50">0</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">Cloud Platforms</span>
                         </div>
                     </div>
                 </div>
-                <div class="project animate__animated animate__fadeInUp">
-                    <h3>Cloud Infrastructure Setup</h3>
-                    <div class="box">
-                        <div class="box-content">
-                            <p><strong>Description:</strong> Set up and managed cloud infrastructure on AWS, including VPC, EC2 instances, RDS, and S3 for a high-availability web application.</p>
-                            <p><strong>Technologies:</strong> AWS (EC2, RDS, S3, VPC), Terraform</p>
-                            <p><strong>Highlights:</strong></p>
-                            <ul>
-                                <li>Achieved 99.9% uptime with auto-scaling and load balancing.</li>
-                                <li>Improved resource utilization by 40%.</li>
-                            </ul>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <img src="/kalyan-user.jpeg" alt="Kalyan Gangadhar" class="profile-image" />
+
+                    </div>
+                    <div class="floating-icons">
+                        <i class="fab fa-aws"></i>
+                        <i class="fab fa-docker"></i>
+                        <i class="fas fa-cloud"></i>
+                        <i class="fab fa-jenkins"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>DevOps Engineer</h3>
+                            <span class="company">SLK Software Pvt Ltd</span>
+                            <span class="duration">April 2023 - Present</span>
+                            <span class="location">Bangalore</span>
+                        </div>
+                        <ul class="timeline-responsibilities">
+                            <li>Managed Azure services including VMs, Load Balancer, VNet, AKS, and Blob Storage</li>
+                            <li>Built and maintained CI/CD pipelines using Azure DevOps, GitHub Actions, and Jenkins</li>
+                            <li>Integrated Terraform, ARM templates, and Python scripts for automated infrastructure</li>
+                            <li>Configured monitoring using Azure Monitor and Application Insights</li>
+                            <li>Automated PostgreSQL RDS provisioning using Terraform and ARM templates</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>DevOps Engineer</h3>
+                            <span class="company">Vijna Labs Pvt Ltd</span>
+                            <span class="duration">Nov 2022 - April 2023</span>
+                            <span class="location">Bangalore</span>
+                        </div>
+                        <ul class="timeline-responsibilities">
+                            <li>Managed Google Cloud Platform services like GKE, VM instances, and GCR</li>
+                            <li>Demonstrated expertise in Kubernetes orchestration and container management</li>
+                            <li>Established CI/CD pipelines using Jenkins and Concourse</li>
+                            <li>Implemented monitoring using Prometheus, Grafana, and Loki</li>
+                            <li>Developed Python automation scripts for system monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>DevOps Engineer</h3>
+                            <span class="company">AGS Health Pvt Ltd</span>
+                            <span class="duration">July 2021 - Nov 2022</span>
+                            <span class="location">Hyderabad</span>
+                        </div>
+                        <ul class="timeline-responsibilities">
+                            <li>Managed AWS services including EC2, ELB, VPC, EKS, IAM, and S3</li>
+                            <li>Established robust CI/CD pipelines using Jenkins, Concourse, and GitLab</li>
+                            <li>Proficient in deploying and securing applications within AWS ecosystem</li>
+                            <li>Skilled in user account management across multiple environments</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Client Care Engineer</h3>
+                            <span class="company">L-Cube Innovative Solution Pvt Ltd</span>
+                            <span class="duration">June 2019 - June 2021</span>
+                            <span class="location">Chennai</span>
+                        </div>
+                        <ul class="timeline-responsibilities">
+                            <li>Provided technical support to healthcare clients</li>
+                            <li>Built strong client relationships as primary contact</li>
+                            <li>Facilitated software implementation and training sessions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Cloud Platforms</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-microsoft"></i>
+                            <span>Azure</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-google"></i>
+                            <span>GCP</span>
                         </div>
                     </div>
                 </div>
-                <div class="project animate__animated animate__fadeInUp">
-                    <h3>Automated Monitoring and Alerts</h3>
-                    <div class="box">
-                        <div class="box-content">
-                            <p><strong>Description:</strong> Implemented a monitoring and alerting system using Prometheus and Grafana, ensuring real-time visibility into application performance and infrastructure health.</p>
-                            <p><strong>Technologies:</strong> Prometheus, Grafana, Alertmanager</p>
-                            <p><strong>Highlights:</strong></p>
-                            <ul>
-                                <li>Set up custom dashboards and alerts, reducing incident response time by 30%.</li>
-                                <li>Enabled proactive monitoring and issue resolution.</li>
-                            </ul>
+
+                <div class="skill-category">
+                    <h3>Infrastructure as Code</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>Terraform</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-file-code"></i>
+                            <span>ARM Templates</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>CloudFormation</span>
                         </div>
                     </div>
                 </div>
-                <div class="project animate__animated animate__fadeInUp">
-                    <h3>Microservices Architecture Deployment</h3>
-                    <div class="box">
-                        <div class="box-content">
-                            <p><strong>Description:</strong> Deployed a microservices architecture using Kubernetes, ensuring scalable and resilient application components.</p>
-                            <p><strong>Technologies:</strong> Kubernetes, Docker, Helm</p>
-                            <p><strong>Highlights:</strong></p>
-                            <ul>
-                                <li>Improved application scalability and fault tolerance.</li>
-                                <li>Simplified management and deployment of microservices.</li>
-                            </ul>
+
+                <div class="skill-category">
+                    <h3>Containerization</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-dharmachakra"></i>
+                            <span>Kubernetes</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-layer-group"></i>
+                            <span>Docker Swarm</span>
                         </div>
                     </div>
                 </div>
-                <div class="project animate__animated animate__fadeInUp">
-                    <h3>Configuration Management with Ansible</h3>
-                    <div class="box">
-                        <div class="box-content">
-                            <p><strong>Description:</strong> Automated the configuration and management of servers using Ansible, ensuring consistent and repeatable setups across environments.</p>
-                            <p><strong>Technologies:</strong> Ansible, YAML</p>
-                            <p><strong>Highlights:</strong></p>
-                            <ul>
-                                <li>Reduced configuration drift and manual intervention.</li>
-                                <li>Streamlined server provisioning and configuration.</li>
-                            </ul>
+
+                <div class="skill-category">
+                    <h3>CI/CD Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-jenkins"></i>
+                            <span>Jenkins</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub Actions</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-gitlab"></i>
+                            <span>GitLab</span>
                         </div>
                     </div>
                 </div>
-                <div class="project animate__animated animate__fadeInUp">
-                    <h3>Containerization and Orchestration</h3>
-                    <div class="box">
-                        <div class="box-content">
-                            <p><strong>Description:</strong> Containerized legacy applications and orchestrated their deployment using Docker and Kubernetes, enhancing application portability and scalability.</p>
-                            <p><strong>Technologies:</strong> Docker, Kubernetes, Docker Compose</p>
-                            <p><strong>Highlights:</strong></p>
-                            <ul>
-                                <li>Reduced deployment complexity and improved resource utilization.</li>
-                                <li>Enabled seamless application updates and rollbacks.</li>
-                            </ul>
+
+                <div class="skill-category">
+                    <h3>Monitoring & Logging</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Prometheus</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Grafana</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-search"></i>
+                            <span>Loki</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-  <!-- ✅ New Certifications Section -->
-  <section id="certifications" class="certifications-section" style="background-image: url('certification.png');">
-    <div class="container">
-      <h2 class="animate__animated animate__fadeInUp">Certifications</h2>
-      <div class="box animate__animated animate__fadeInUp">
-        <h3>AWS Certified</h3>
-        <p>Successfully earned an AWS certification demonstrating expertise in cloud technologies.</p>
-        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="3f0e4711-e509-4b24-8608-c0b99e6b166d" data-share-badge-host="https://www.credly.com"></div>
-      </div>
-    </div>
-  </section>
 
-  <section id="projects" class="projects-section" style="background-image: url('project.png');">
-    <!-- Your existing project code remains here -->
-  </section>
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education & Certifications</h2>
+                <p class="section-subtitle">Academic background & achievements</p>
+            </div>
+            <div class="education-content">
+                <div class="education-column">
+                    <h3>Education</h3>
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-info">
+                            <h4>B.Tech in Electrical & Electronics</h4>
+                            <p class="institution">JNTUK</p>
+                            <span class="year">2016 - 2019</span>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="education-info">
+                            <h4>Diploma in Electrical & Electronics</h4>
+                            <p class="institution">SBTET</p>
+                            <span class="year">2013 - 2016</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-column">
+                    
+                    <h3>Certifications</h3>
 
-  <section id="contact" class="contact-section">
-    <div class="container">
-      <h2 class="animate__animated animate__fadeInUp">Contact</h2>
-      <div class="contact-content animate__animated animate__fadeInUp">
-        <div class="contact-details">
-          <p><i class="fas fa-envelope"></i> <a href="mailto:kalyanappari002@gmail.com">kalyanappari002@gmail.com</a></p>
-          <p><i class="fas fa-phone"></i> <a href="tel:+919182106898">+91 918 210 6898</a></p>
-          <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/kalyan-gangadhar-021388137/" target="_blank">LinkedIn</a></p>
+<!-- AWS Certification -->
+<a href="https://www.credly.com/badges/3f0e4711-e509-4b24-8608-c0b99e6b166d/linked_in_profile" target="_blank" style="text-decoration: none; color: inherit;">
+    <div class="certification-item">
+        <div class="cert-icon">
+            <i class="fab fa-aws"></i>
         </div>
-      </div>
+        <div class="cert-info">
+            <h4>AWS Certified Cloud Practitioner</h4>
+            <p>Amazon Web Services</p>
+            <span class="cert-date">June 2025 - June 2028</span>
+        </div>
     </div>
-  </section>
+</a>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 Kalyan Gangadhar. All rights reserved.</p>
+<!-- Linux Certification -->
+<a href="https://www.credly.com/badges/b295f419-ae8b-4c8c-a18a-87f7a47115d9/linked_in_profile" target="_blank" style="text-decoration: none; color: inherit;">
+    <div class="certification-item">
+        <div class="cert-icon">
+            <i class="fab fa-linux"></i>
+        </div>
+        <div class="cert-info">
+            <h4>Linux Unhatched</h4>
+            <p>Cisco</p>
+            <span class="cert-date">June 2025</span>
+        </div>
     </div>
-  </footer>
+</a>
 
-  <!-- Required for Credly badge -->
-  <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-  <script src="script.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss your next project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>kalyanappari002@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 918 210 6898</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Bangalore, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://www.linkedin.com/in/kalyan-gangadhar/" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin-in"></i>
+                            LinkedIn
+                        </a>
+                        
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Kalyan Gangadhar. All rights reserved.</p>
+                <p>DevOps Engineer | Cloud Architect | Automation Specialist</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
